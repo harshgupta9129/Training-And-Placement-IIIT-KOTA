@@ -11,7 +11,10 @@ const Stats: React.FC = () => (
         <p cx="additional-info">
           Comprehensive summary of placement data, student participation, and compensation trends
           over the years.
-          <span cx="update-time"> Last updated: June 04<sup>th</sup>, 2026</span>
+          <span cx="update-time">
+            {' '}
+            Last updated: June 04<sup>th</sup>, 2026
+          </span>
         </p>
       </div>
       <Tabs />

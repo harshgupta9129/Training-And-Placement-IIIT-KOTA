@@ -1,8 +1,7 @@
 .footer {
   position: relative;
   background-color: #0b0f19;
-  background-image: 
-    radial-gradient(circle at 80% 20%, rgba(234, 88, 12, 0.04) 0%, transparent 40%),
+  background-image: radial-gradient(circle at 80% 20%, rgba(234, 88, 12, 0.04) 0%, transparent 40%),
     radial-gradient(circle at 20% 80%, rgba(30, 41, 59, 0.2) 0%, transparent 50%);
   color: #94a3b8;
   padding-top: 3rem;
@@ -13,21 +12,21 @@
 }
 
 .ctr {
-  @apply container mx-auto px-6 flex flex-col;
+  @apply container mx-auto flex flex-col px-6;
   max-width: 1200px;
 }
 
 .top-footer {
-  @apply flex flex-col lg:flex-row gap-8 pb-6 w-full;
+  @apply flex w-full flex-col gap-8 pb-6 lg:flex-row;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .brand-col {
-  @apply w-full lg:w-5/12 flex flex-col items-start text-left;
+  @apply flex w-full flex-col items-start text-left lg:w-5/12;
 }
 
 .brand-header {
-  @apply flex items-center space-x-3 mb-4 w-full;
+  @apply mb-4 flex w-full items-center space-x-3;
 }
 
 .logo {
@@ -71,20 +70,20 @@
 }
 
 .brand-desc {
-  @apply text-[13px] md:text-sm leading-relaxed mb-4 font-normal text-gray-400;
+  @apply mb-4 text-[13px] font-normal leading-relaxed text-gray-400 md:text-sm;
   max-width: 340px;
   font-family: 'Open Sans', sans-serif;
 }
 
 .contact-list {
-  @apply flex flex-col gap-2.5 mb-4 w-full;
+  @apply mb-4 flex w-full flex-col gap-2.5;
 }
 
 .contact-item {
-  @apply flex items-start space-x-3 text-[13px] md:text-sm text-gray-400 transition-all duration-300;
+  @apply flex items-start space-x-3 text-[13px] text-gray-400 transition-all duration-300 md:text-sm;
 
   .contact-icon {
-    @apply text-gray-400 flex-shrink-0 transition-transform duration-300;
+    @apply flex-shrink-0 text-gray-400 transition-transform duration-300;
     height: 18px;
     width: 18px;
     margin-top: 2px;
@@ -95,7 +94,7 @@
   }
 
   a {
-    @apply leading-normal transition-all duration-300 relative text-gray-400;
+    @apply relative leading-normal text-gray-400 transition-all duration-300;
 
     &::after {
       content: '';
@@ -128,7 +127,7 @@
 }
 
 .social {
-  @apply flex items-center gap-3.5 mt-4;
+  @apply mt-4 flex items-center gap-3.5;
 
   a {
     display: flex;
@@ -140,7 +139,7 @@
     border: 1px solid rgba(255, 255, 255, 0.08);
     background-color: rgba(255, 255, 255, 0.02);
     @apply text-gray-400 transition-all duration-300;
-    
+
     &:hover {
       color: #ffffff;
       border-color: #ea580c;
@@ -157,11 +156,11 @@
 }
 
 .links-col {
-  @apply w-full lg:w-7/12 flex flex-col;
+  @apply flex w-full flex-col lg:w-7/12;
 }
 
 .links-grid {
-  @apply grid grid-cols-1 sm:grid-cols-3 gap-6 w-full;
+  @apply grid w-full grid-cols-1 gap-6 sm:grid-cols-3;
 }
 
 .link-group {
@@ -169,7 +168,7 @@
 }
 
 .group-title {
-  @apply text-[13px] md:text-sm font-extrabold text-white uppercase tracking-wider mb-4 pb-1.5 relative;
+  @apply relative mb-4 pb-1.5 text-[13px] font-extrabold uppercase tracking-wider text-white md:text-sm;
   font-family: 'Open Sans', sans-serif;
 
   &::after {
@@ -191,15 +190,15 @@
 }
 
 .group-list {
-  @apply flex flex-col gap-2 w-full;
-  
+  @apply flex w-full flex-col gap-2;
+
   li {
     @apply flex;
   }
 }
 
 .group-link {
-  @apply text-[13px] md:text-sm text-gray-400 leading-normal transition-all duration-300 flex items-center;
+  @apply flex items-center text-[13px] leading-normal text-gray-400 transition-all duration-300 md:text-sm;
   font-family: 'Open Sans', sans-serif;
 
   &::before {
@@ -225,21 +224,21 @@
 }
 
 .bottom-footer {
-  @apply flex flex-col sm:flex-row items-center justify-between mt-6 w-full text-center sm:text-left gap-4;
+  @apply mt-6 flex w-full flex-col items-center justify-between gap-4 text-center sm:flex-row sm:text-left;
 }
 
 .copyright {
-  @apply text-xs md:text-[13px] text-gray-500 font-normal;
+  @apply text-xs font-normal text-gray-500 md:text-[13px];
   font-family: 'Open Sans', sans-serif;
 }
 
 .dev-credit {
-  @apply text-xs md:text-[13px] text-gray-500 font-normal;
+  @apply text-xs font-normal text-gray-500 md:text-[13px];
   font-family: 'Open Sans', sans-serif;
 }
 
 .dev-highlight {
-  @apply font-bold transition-all duration-300 inline-block;
+  @apply inline-block font-bold transition-all duration-300;
   color: #ea580c;
 
   &:hover {

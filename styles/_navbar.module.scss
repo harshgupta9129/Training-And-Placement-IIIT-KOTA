@@ -5,7 +5,7 @@
   width: 100%;
   z-index: 50;
   transition: all 0.3s ease-in-out;
-  
+
   // Clean white frosted glass background (matches screenshot)
   background-color: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(12px);
@@ -82,7 +82,8 @@
     border-bottom: 1px solid rgba(226, 232, 240, 0.8);
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
 
-    .hindi-text, .english-text {
+    .hindi-text,
+    .english-text {
       color: #0a2558;
     }
 
@@ -112,7 +113,9 @@
       }
     }
 
-    .line1, .line2, .line3 {
+    .line1,
+    .line2,
+    .line3 {
       stroke: #0a2558;
     }
   }
@@ -122,7 +125,8 @@
     border-bottom-color: transparent;
     box-shadow: none;
 
-    .hindi-text, .english-text {
+    .hindi-text,
+    .english-text {
       color: #ffffff; /* White branding on blue hero background */
     }
 
@@ -152,7 +156,9 @@
       }
     }
 
-    .line1, .line2, .line3 {
+    .line1,
+    .line2,
+    .line3 {
       stroke: #ffffff;
     }
   }
@@ -228,20 +234,20 @@
   padding: 0 1.5rem;
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
   transition: all 0.3s ease-out;
-  
+
   &[data-toggle='true'] {
     max-height: 500px;
     padding: 1.25rem 1.5rem;
     border: 1px solid rgba(226, 232, 240, 0.7);
-    
+
     .nav-link {
-      @apply text-gray-700 w-full;
-      
+      @apply w-full text-gray-700;
+
       &:hover {
         color: #ea580c;
         background-color: rgba(255, 237, 213, 0.6);
       }
-      
+
       &[data-active='true'] {
         color: #ea580c;
         background-color: #ffedd5;
@@ -266,7 +272,7 @@
     padding: 0;
     box-shadow: none;
     margin: 0;
-    
+
     & > li {
       margin-left: 0.25rem;
 
@@ -282,7 +288,7 @@
 }
 
 .menu {
-  @apply flex h-10 w-10 cursor-pointer items-center justify-center rounded-lg border-none bg-transparent p-1 transition-colors focus:outline-none xl:hidden;
+  @apply focus:outline-none flex h-10 w-10 cursor-pointer items-center justify-center rounded-lg border-none bg-transparent p-1 transition-colors xl:hidden;
 }
 
 .line1,
@@ -326,7 +332,7 @@
 // ==========================================
 .dropdown-item {
   position: relative;
-  
+
   @media (min-width: 1280px) {
     &:hover {
       .dropdown-menu {
@@ -334,7 +340,7 @@
         opacity: 1;
         transform: translateX(-50%) translateY(0);
       }
-      
+
       .chevron-icon {
         transform: rotate(180deg);
         color: #ea580c;
@@ -357,7 +363,7 @@
   display: flex;
   flex-direction: column;
   z-index: 100;
-  
+
   // Desktop absolute overlay block
   @media (min-width: 1280px) {
     position: absolute;
@@ -374,7 +380,8 @@
     padding: 0.625rem;
     visibility: hidden;
     opacity: 0;
-    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.25s;
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.25s;
   }
 
   // Mobile list styling (indented inline lists)

@@ -7,12 +7,12 @@
 }
 
 .label {
-  @apply m-0 font-extrabold text-xs uppercase tracking-wider mb-1.5;
+  @apply m-0 mb-1.5 text-xs font-extrabold uppercase tracking-wider;
   color: #1e293b;
 }
 
 .intro {
-  @apply m-0 pt-1.5 border-t border-solid border-gray-100 text-xs font-semibold;
+  @apply m-0 border-t border-solid border-gray-100 pt-1.5 text-xs font-semibold;
   color: #475569;
 
   span {

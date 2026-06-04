@@ -38,11 +38,11 @@
 }
 
 .title-wrapper {
-  @apply mx-auto flex flex-col items-center text-center mb-10 max-w-2xl;
+  @apply mx-auto mb-10 flex max-w-2xl flex-col items-center text-center;
 }
 
 .title {
-  @apply text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight;
+  @apply text-3xl font-extrabold tracking-tight text-gray-900 md:text-4xl;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -51,21 +51,21 @@
 }
 
 .divider-line {
-  @apply h-1 w-16 rounded mt-4;
+  @apply mt-4 h-1 w-16 rounded;
   background: linear-gradient(90deg, #172b4d, #ea580c);
 }
 
 .lead {
-  @apply mt-10 mb-6 text-center text-sm md:text-base font-bold text-gray-800 tracking-wider;
+  @apply mt-10 mb-6 text-center text-sm font-bold tracking-wider text-gray-800 md:text-base;
   font-family: 'Open Sans', sans-serif;
 }
 
 .members {
-  @apply mx-auto flex max-w-[1250px] flex-wrap justify-center gap-3 sm:gap-4 md:gap-5 z-10 relative mb-6;
+  @apply relative z-10 mx-auto mb-6 flex max-w-[1250px] flex-wrap justify-center gap-3 sm:gap-4 md:gap-5;
 }
 
 .member {
-  @apply flex justify-center items-start;
+  @apply flex items-start justify-center;
 }
 
 .wrapper {
@@ -97,7 +97,7 @@
 }
 
 .info-wrapper {
-  @apply flex flex-col items-center justify-start mt-2;
+  @apply mt-2 flex flex-col items-center justify-start;
 }
 
 .name {
@@ -106,7 +106,7 @@
 }
 
 .mobile {
-  @apply mt-0.5 text-center text-[8px] leading-tight text-gray-300 sm:text-[9px] md:text-[10px] transition-colors duration-300;
+  @apply mt-0.5 text-center text-[8px] leading-tight text-gray-300 transition-colors duration-300 sm:text-[9px] md:text-[10px];
   font-family: 'Open Sans', sans-serif;
 
   &:hover {

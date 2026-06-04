@@ -15,7 +15,8 @@ const MapLocation: React.FC = () => (
           </h2>
           <div cx="divider-line" />
           <p cx="desc">
-            The Indian Institute of Information Technology Kota is situated at its permanent campus in Ranpur, Kota.
+            The Indian Institute of Information Technology Kota is situated at its permanent campus
+            in Ranpur, Kota.
           </p>
 
           <div cx="address-card">
@@ -32,7 +33,11 @@ const MapLocation: React.FC = () => (
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 />
-                <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" strokeLinecap="round" strokeLinejoin="round" />
+                <path
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
               </svg>
             </div>
             <div cx="address-details">
@@ -66,12 +71,12 @@ const MapLocation: React.FC = () => (
         <div cx="map-side">
           <div cx="map-wrapper">
             <iframe
-              allowFullScreen={true}
               cx="map-iframe"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.5186591322046!2d75.83002631500742!3d25.049985099999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396f873f4fed661b%3A0x3120cfb5f427a045!2sIIIT%20Kota!5e0!3m2!1sen!2sin!4v1716982424850!5m2!1sen!2sin"
               title="IIIT Kota Permanent Campus Location"
+              allowFullScreen
             />
           </div>
         </div>
