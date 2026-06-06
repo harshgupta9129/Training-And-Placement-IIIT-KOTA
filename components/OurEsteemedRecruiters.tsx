@@ -73,12 +73,13 @@ const OurEsteemedRecruiters: React.FC = () => {
           {allCompanies.map(([name, src]) => (
             <motion.div
               key={cyrb53(`recruiter-card-${name}`)}
-              cx="logo-card"
+              cx="grid-item"
               variants={cardVariants}
-              whileHover={{ y: -5, scale: 1.03 }}
             >
-              <div cx="img-container">
-                <Image alt={name} src={src} priority />
+              <div cx="logo-card">
+                <div cx="img-container">
+                  <Image alt={name} src={src} priority />
+                </div>
               </div>
             </motion.div>
           ))}
