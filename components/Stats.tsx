@@ -13,7 +13,7 @@ const Stats: React.FC = () => (
           over the years.
           <span cx="update-time">
             {' '}
-            Last updated: June 04<sup>th</sup>, 2026
+            Last updated: June 07<sup>th</sup>, 2026
           </span>
         </p>
       </div>
